@@ -27,6 +27,7 @@ set(OLD_GLOB
   "/home/kds/atmega128_workspace/atmega128a/src/ap.c"
   "/home/kds/atmega128_workspace/atmega128a/src/driver/button.c"
   "/home/kds/atmega128_workspace/atmega128a/src/driver/led.c"
+  "/home/kds/atmega128_workspace/atmega128a/src/driver/pwm16.c"
   "/home/kds/atmega128_workspace/atmega128a/src/driver/pwm8.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

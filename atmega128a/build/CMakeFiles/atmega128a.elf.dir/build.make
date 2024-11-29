@@ -125,10 +125,24 @@ CMakeFiles/atmega128a.elf.dir/src/driver/led.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atmega128a.elf.dir/src/driver/led.c.s"
 	/home/kds/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kds/atmega128_workspace/atmega128a/src/driver/led.c -o CMakeFiles/atmega128a.elf.dir/src/driver/led.c.s
 
+CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
+CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj: /home/kds/atmega128_workspace/atmega128a/src/driver/pwm16.c
+CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kds/atmega128_workspace/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj"
+	/home/kds/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj -MF CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj.d -o CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj -c /home/kds/atmega128_workspace/atmega128a/src/driver/pwm16.c
+
+CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.i"
+	/home/kds/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kds/atmega128_workspace/atmega128a/src/driver/pwm16.c > CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.i
+
+CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.s"
+	/home/kds/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kds/atmega128_workspace/atmega128a/src/driver/pwm16.c -o CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.s
+
 CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
 CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj: /home/kds/atmega128_workspace/atmega128a/src/driver/pwm8.c
 CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kds/atmega128_workspace/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kds/atmega128_workspace/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj"
 	/home/kds/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj -MF CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj.d -o CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj -c /home/kds/atmega128_workspace/atmega128a/src/driver/pwm8.c
 
 CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.i: cmake_force
@@ -145,6 +159,7 @@ atmega128a_elf_OBJECTS = \
 "CMakeFiles/atmega128a.elf.dir/src/ap.c.obj" \
 "CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj" \
 "CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj" \
+"CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj" \
 "CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj"
 
 # External object files for target atmega128a.elf
@@ -154,10 +169,11 @@ atmega128a.elf: CMakeFiles/atmega128a.elf.dir/main.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/ap.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj
+atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/build.make
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kds/atmega128_workspace/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable atmega128a.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kds/atmega128_workspace/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable atmega128a.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atmega128a.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Invoking: Make Hex"
 	/home/kds/avr8/bin/avr-objcopy -O ihex -R .eeprom atmega128a.elf atmega128a.hex

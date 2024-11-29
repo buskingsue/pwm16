@@ -3,13 +3,11 @@
 #include "driver/button.h"
 #include "driver/pwm8.h"
 #include <avr/interrupt.h>
-
+#include <driver/pwm16.h>
 // 속도 증가 함수
-void increaseSpeed(uint8_t *duty);
 
 
 // 속도 감소 함수
-void decreaseSpeed(uint8_t *duty);
 
 void apInit()
 {
@@ -18,7 +16,7 @@ void apInit()
 
 void apMain(void)
 {
-    // LED 초기화
+  /*  // LED 초기화
     LED led;
     led.port = &PORTB;
     led.pinNumber = 0;
@@ -35,15 +33,20 @@ void apMain(void)
 
     // PWM 초기화
     pwm8Init();
-    uint8_t dutyCycle = 0;  // 초기 듀티 사이클 0 (최소 속도)
-
+    uint8_t dutyCycle = 0;  // 초기 듀티 사이클 0 (최소 속도)*/
+    pwm16Init();
     while (1)
     {
-        // ON 버튼을 눌렀을 때: LED 켜기 및 속도 증가
+        OCR3A= 125;
+        _delay_ms(1000);
+        OCR3A= 620;
+        _delay_ms(1000);
+       /* // ON 버튼을 눌렀을 때: LED 켜기 및 속도 증가
         if (Button_getState(&btnOn) == ACT_RELEASE)
         {
             ledon(&led);  // LED 켬
             // 듀티 사이클을 점차 증가
+            {
             for (uint8_t i = 0; i <= 255; i++)
             {
                 OCR0 = i;  // PWM 듀티 사이클 설정
@@ -59,22 +62,26 @@ void apMain(void)
                 pwm8Run(0);      // 속도 감소 (PWM 출력 0)
             }
             _delay_ms(200);  // 버튼 디바운스 처리
+            }
         }
 
         
         // OFF 버튼을 눌렀을 때: LED 끄기 및 PWM 출력 0 (속도 0)
         if (Button_getState(&btnOff) == ACT_RELEASE)
         {
+            // 버튼 눌림 상태 출력
+            printf("Button OFF pressed\n");
             ledoff(&led);        // LED 끔
             pwm8Run(0);          // PWM 출력 0 (속도 0)
             _delay_ms(200);      // 버튼 디바운스 처리
         }
+       
 
         // TOGGLE 버튼을 눌렀을 때: LED 상태 반전
         if (Button_getState(&btnTog) == ACT_RELEASE)
         {
             ledTog(&led);  // LED 상태 반전
-            _delay_ms(200);  // 버튼 디바운스 처리
-        }
+            _delay_ms(200);  // 버튼 디바운스 처리 
+        }*/
     }
 }

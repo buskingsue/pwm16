@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/kds/atmega128_workspace/atmega128a/build",
+  "command": "/home/kds/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/kds/atmega128_workspace/atmega128a/src -I/home/kds/atmega128_workspace/atmega128a/src/ap -I/home/kds/atmega128_workspace/atmega128a/src/bsp -I/home/kds/atmega128_workspace/atmega128a/src/hw -I/home/kds/atmega128_workspace/atmega128a/src/common -I/home/kds/atmega128_workspace/atmega128a/src/common/hw/include -g -std=gnu11 -mmcu=atmega128a -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj -c /home/kds/atmega128_workspace/atmega128a/src/driver/pwm16.c",
+  "file": "/home/kds/atmega128_workspace/atmega128a/src/driver/pwm16.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/pwm16.c.obj"
+},
+{
+  "directory": "/home/kds/atmega128_workspace/atmega128a/build",
   "command": "/home/kds/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/kds/atmega128_workspace/atmega128a/src -I/home/kds/atmega128_workspace/atmega128a/src/ap -I/home/kds/atmega128_workspace/atmega128a/src/bsp -I/home/kds/atmega128_workspace/atmega128a/src/hw -I/home/kds/atmega128_workspace/atmega128a/src/common -I/home/kds/atmega128_workspace/atmega128a/src/common/hw/include -g -std=gnu11 -mmcu=atmega128a -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj -c /home/kds/atmega128_workspace/atmega128a/src/driver/pwm8.c",
   "file": "/home/kds/atmega128_workspace/atmega128a/src/driver/pwm8.c",
   "output": "CMakeFiles/atmega128a.elf.dir/src/driver/pwm8.c.obj"

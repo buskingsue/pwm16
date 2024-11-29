@@ -15,5 +15,5 @@ void ledoff(LED* led)
 }
  void ledTog(LED* led)
  {
-     *(led->port) ^= (1<< led->pinNumber); //led 끄기(현제 led 반전)
+     *(led->port) ^= (1 << led->pinNumber); //led 끄기(현제 led 반전)
  }
